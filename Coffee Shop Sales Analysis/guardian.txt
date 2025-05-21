@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Guardian Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Guardian+Egyptian+Text&family=Guardian+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Guardian Egyptian Text', Georgia, serif;
+    }
+    header, nav, .section-header, .article-title, .subheadline, .list-group-item, footer {
+      font-family: 'Guardian Sans', Arial, sans-serif;
+    }
+    header {
+      background-color: #052962;
+      color: white;
+    }
+    .header-light, .bg-light, .bg-white {
+      background-color: #ffffff !important;
+    }
+    .section-header {
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .headline-img {
+      width: 100%;
+      height: auto;
+    }
+    .article-title {
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+    .subheadline {
+      font-size: 1rem;
+      color: #555;
+    }
+    .news-card img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #052962;
+      color: white;
+    }
+    footer a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Guardian-Style Header Start -->
+<header class="border-bottom">
+  <div class="container-fluid border-bottom py-1 small header-light">
+    <div class="row align-items-center">
+      <div class="col-md-6 ps-3 text-dark">
+        <span>Wednesday 21 May 2025</span>
+      </div>
+      <div class="col-md-6 text-end pe-3">
+        <a href="#" class="text-decoration-none me-3 text-dark">Sign in</a>
+        <a href="#" class="btn btn-warning btn-sm fw-bold">Support us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-3">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <a href="#" class="text-white text-decoration-none display-5 fw-bold" style="font-family: 'Guardian Egyptian Text', serif;">the Guardian</a>
+      </div>
+      <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+        <form class="d-flex justify-content-md-end justify-content-center" role="search">
+          <input class="form-control form-control-sm w-50 me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light btn-sm" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-light border-top border-bottom">
+    <div class="container">
+      <div class="row text-center small fw-semibold">
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">News</a></div>
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">Opinion</a></div>
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">Sport</a></div>
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">Culture</a></div>
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">Lifestyle</a></div>
+        <div class="col py-2"><a class="text-dark text-decoration-none" href="#">More</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Guardian-Style Header End -->
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="" class="headline-img mb-3" alt="Headline Image">
+      <h1 class="article-title">Main Headline Story Title</h1>
+      <p class="subheadline">Brief subheadline summarizing the story.</p>
+    </div>
+  </div>
+
+  <div class="row mt-5 g-4">
+  <h5 class="section-header">News</h5>
+
+  <div class="col-md-12">
+    <div class="row mb-4 border-top pt-3">
+      <div class="col-md-2 d-flex align-items-start pt-1">
+          <span class="fw-bold text-uppercase">News</span>
+        </div>
+        <div class="col-md-7">
+        <h4 style="font-size: 1.25rem; font-weight: bold;">UN calls for Gaza ceasefire resolution</h4>
+        <p style="font-size: 0.95rem; color: #555;">Biden says ceasefire ‘must be implemented’ as UN votes on resolution to end fighting in Gaza</p>
+      </div>
+      <div class="col-md-3">
+        <img src="" alt="Gaza image" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row mb-4 border-top pt-3">
+      <div class="col-md-2">
+        <span class="text-muted small">Iran</span>
+      </div>
+      <div class="col-md-7">
+        <h4 style="font-size: 1.25rem; font-weight: bold;">Iran’s president confirmed dead in helicopter crash</h4>
+        <p style="font-size: 0.95rem; color: #555;">Ebrahim Raisi killed along with foreign minister and others as aircraft goes down in foggy, mountainous terrain</p>
+      </div>
+      <div class="col-md-3">
+        <img src="" alt="Iran crash image" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row mb-4 border-top pt-3">
+      <div class="col-md-2">
+        <span class="text-muted small">Economy</span>
+      </div>
+      <div class="col-md-7">
+        <h4 style="font-size: 1.25rem; font-weight: bold;">UK inflation falls to 2.3%</h4>
+        <p style="font-size: 0.95rem; color: #555;">Prices rise at slowest pace in nearly three years, easing pressure on households and the Bank of England</p>
+      </div>
+      <div class="col-md-3">
+        <img src="" alt="UK economy image" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-2">
+        <span class="text-muted small">Ukraine war</span>
+      </div>
+      <div class="col-md-7">
+        <h4 style="font-size: 1.25rem; font-weight: bold;">Russia steps up Kharkiv assault</h4>
+        <p style="font-size: 0.95rem; color: #555;">Troops intensify attack in Ukraine’s north-east after days of gains as Kyiv braces for further advances</p>
+      </div>
+      <div class="col-md-3">
+        <img src="" alt="Ukraine image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+    <h5 class="section-header">Opinion</h5>
+    <div class="col-md-6">
+      <p class="article-title">Opinion Title One</p>
+      <p class="subheadline">Brief commentary or analysis summary.</p>
+    </div>
+    <div class="col-md-6">
+      <p class="article-title">Opinion Title Two</p>
+      <p class="subheadline">Brief commentary or analysis summary.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="pt-5 border-top">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-md-5 g-4 mb-4 text-start small">
+      <div class="col">
+        <h6 class="fw-bold">News</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">World</a></li>
+          <li><a href="#">UK</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Science</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h6 class="fw-bold">Opinion</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Columnists</a></li>
+          <li><a href="#">Editorials</a></li>
+          <li><a href="#">Letters</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h6 class="fw-bold">Culture</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Film</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">TV & Radio</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h6 class="fw-bold">Lifestyle</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Health</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h6 class="fw-bold">Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Complaints & corrections</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center pb-4 small">
+      <p class="mb-1">&copy; 2025 The Guardian Clone. All rights reserved.</p>
+      <p><a href="#">Back to top</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
